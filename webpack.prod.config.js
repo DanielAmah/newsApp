@@ -31,8 +31,13 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js?$/,
-        loader: 'babel-loader',
+        loader: ['babel-loader', 'eslint-loader'],
         include: path.join(__dirname, 'src') },
+        {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader'
+    },
       { test: /\.scss?$/,
         loader: 'style-loader!css-loader!sass-loader',
         include: path.join(__dirname, 'src', 'styles') },

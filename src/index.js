@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './components/login/layout/header'
+import Layout from './components/login/layout/layout'
 import './styles/app.scss'
 import { AppContainer } from 'react-hot-loader'
 
@@ -13,7 +13,7 @@ const render = Component => {
   )
 }
 
-render(Header)
+render(Layout)
 if (module.hot) {
-  module.hot.accept('./components/login/layout/header', () => { render(Header) })
+  module.hot.accept('./components/login/layout/layout', () => { render(Layout) })
 }

@@ -1,0 +1,4 @@
+src/*.js
+src/components/login/layout/*.js
+build/*.js
+public/*.js

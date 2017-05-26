@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-export default class Logo extends React.Component {
+export default class SignIn extends React.Component {
   render () {
     return (
       <div>
-        <img src = {'src/img/sign-in-button.png'} id='signIn'/>
+        <img src = {'/img/sign-in-button.png'} id='signIn'/>
       </div>
     )
   }

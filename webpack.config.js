@@ -23,16 +23,21 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js?$/,
-        loader: 'babel-loader',
+        loader: ['babel-loader', 'eslint-loader'],
         include: path.join(__dirname, 'src')
       },
+       {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader'
+    },
       { test: /\.scss?$/,
         loader: 'style-loader!css-loader!sass-loader',
         include: path.join(__dirname, 'src', 'styles') },
       { test: /\.png$/,
         loader: 'file-loader' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        loader: 'file-loader'}
+      { test: /\.(jpe?g|ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        loader: 'file-loader?public/img/[name].[ext]'}
     ]
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import Layout from './components/pages/layout';
+import App from './components/pages/layout';
 import './styles/app.scss'
 
 
@@ -10,7 +10,7 @@ import './styles/app.scss'
 
 ReactDOM.render(
 	<Router history={hashHistory}>
-		<Route path='/' component={Layout}>
+		<Route path='/' component={App}>
 		</Route>
 	</Router>,
 	 main);

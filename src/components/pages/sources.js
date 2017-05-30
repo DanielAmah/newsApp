@@ -10,7 +10,7 @@ import React from 'react';
     return (
       <div className="col-sm-12">
       <form onSubmit={this.props.handleSubmit}>
-        <div className="form-group col-sm-5">
+        <div className="form-group col-md-5 col-sm-12">
           <select value={this.props.nameValue} onChange={this.props.handleChange} className="form-control">
             <option value=" ">--Choose your Source--</option>
             <option value="abc-news-au">ABC NEWS (AU)</option>
@@ -28,7 +28,6 @@ import React from 'react';
                  <option value="cnbc">CNBC</option>
                  <option value="cnn">CNN</option>
                   <option value="daily-mail">Daily Mail</option>
-                   <option value="cnn">CNN</option>
                     <option value="der-tagesspiegel">Der Tagesspiegel</option>
                      <option value="die-zeit">Die Zeit</option>
                       <option value="engadget">Engadget</option>
@@ -88,7 +87,7 @@ import React from 'react';
         
         </div>
 
-        <div className="form-group col-sm-5">
+        <div className="form-group col-md-5 col-sm-12">
           <select value={this.props.nameValue2} onChange={this.props.handleChange2} className="form-control">
             <option value=" ">--Sort By--</option>
             <option value="top">Top Stories</option>
@@ -96,7 +95,7 @@ import React from 'react';
             <option value="popular">Popular Stories</option>
           </select>
            </div>
-            <div className="form-group col-sm-2">
+            <div className="form-group col-md-2 col-sm-12">
         <input type="submit" value="Search" className="btn btn-block btn-danger"/>
           </div>
 

@@ -11,8 +11,8 @@ import React from 'react';
       <div className="col-sm-12">
       <form onSubmit={this.props.handleSubmit}>
         <div className="form-group col-md-5 col-sm-12">
-          <select value={this.props.nameValue} onChange={this.props.handleChange} className="form-control">
-            <option value=" ">--Choose your Source--</option>
+          <select value={this.props.nameValue} onChange={this.props.handleChange} className="form-control input-lg">
+            <option selected disabled>--Choose your Source--</option>
             <option value="abc-news-au">ABC NEWS (AU)</option>
             <option value="ars-technica">Ars Technica</option>
             <option value="al-jazeera-english">Al Jazeera English</option>
@@ -88,15 +88,15 @@ import React from 'react';
         </div>
 
         <div className="form-group col-md-5 col-sm-12">
-          <select value={this.props.nameValue2} onChange={this.props.handleChange2} className="form-control">
-            <option value=" ">--Sort By--</option>
+          <select value={this.props.nameValue2} onChange={this.props.handleChange2} className="form-control input-lg">
+            <option selected disabled>--Sort By--</option>
             <option value="top">Top Stories</option>
             <option value="latest">Latest Stories</option>
             <option value="popular">Popular Stories</option>
           </select>
            </div>
             <div className="form-group col-md-2 col-sm-12">
-        <input type="submit" value="Search" className="btn btn-block btn-danger"/>
+        <input type="submit" value="Search" className="btn btn-block btn-danger btn-lg"/>
           </div>
 
       </form>

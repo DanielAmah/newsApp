@@ -17,7 +17,7 @@ body {
 h1 {
 	text-align: center;
 	color: #fff;
-	font-size: 4em;
+	font-size: 5em;
 }
 
 article {
@@ -79,8 +79,37 @@ img {
 
 .posArticles {
 	
-	margin-top: 10%;
+	margin-top: 12%;
 	width: 100%;
+}
+
+ul {
+	
+
+}
+
+li {
+	
+	display: inline-block;
+	margin-right: 20px;
+    text-align: center;
+
+}
+
+.Demo__some-network {
+        display: inline-block;
+        margin-right: 30px;
+        text-align: center;
+      }
+      .Demo__some-network__share-count {
+        margin-top: 3px;
+        font-size: 12px;
+      }
+
+
+    .btn-huge{
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 }

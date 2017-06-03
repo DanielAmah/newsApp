@@ -2,19 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="723432734756-bvm7lq0v6gtg5d88vrg2aluqjd7o0lme.apps.googleusercontent.com">
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
     <div id="main"></div>
 
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.0/es6-promise.auto.min.js'></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/en-gb.js'></script>
 
-<script async src="https://static.addtoany.com/menu/page.js"></script>
+<script src="https://apis.google.com/js/platform.js?onload=triggerGoogleLoaded" async defer></script>
+<script type="text/javascript">
+  function triggerGoogleLoaded() {
+    window.dispatchEvent(new Event('google-loaded'));
+  }
+</script>
 
     <script type="text/javascript" src="/public/bundle.js"></script>
   </body>

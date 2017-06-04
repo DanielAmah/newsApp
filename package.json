@@ -6,7 +6,7 @@
   "scripts": {
     "test": "babel-node ./spec/run.js",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.babel.js --progress --colors",
-    "start": "node app.js",
+    "start": "webpack-dev-server",
     "dev": "webpack-dev-server --hot --history-api-fallback --open"
   },
   "repository": {

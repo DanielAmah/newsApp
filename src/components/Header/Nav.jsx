@@ -26,7 +26,7 @@ export default class Nav extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-tv-tracker navbar-fixed-top">
+        <nav className="navbar navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">
               <a className="navbar-brand" href="/"><b>NEWS APP</b></a>

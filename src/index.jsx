@@ -5,7 +5,7 @@ import Layout from './components/Layout.jsx';
 import Body from './components/Body.jsx'
 import HomePage from './components/HomePage.jsx'
 
-import './style.scss';
+import './styles/style.scss';
 
 const root = document.getElementById('root');
 

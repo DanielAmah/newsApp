@@ -1,38 +1,28 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './src/index.html',
-  filename: 'index.html',
-  inject: 'body'
-});
-
 
 module.exports = {
   devtool: 'source-map',
 
   entry: [
+  
     './src/index.jsx'
   ],
 
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'dist/bundle.js',
-    publicPath: '/'
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js',
+    publicPath: '/public/'
   },
 
   plugins: [
-  HtmlWebpackPluginConfig,
-    new ExtractTextPlugin('dist/bundle.css'),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
         warnings: false
       }
     }),
-    new webpack.DefinePlugin({
+	new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
@@ -44,23 +34,19 @@ module.exports = {
       { test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
-        }
+        include: path.join(__dirname, 'src')
+     
       },
        {
       test: /\.jsx$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
-        }
+        include: path.join(__dirname, 'src')
     },
       { 
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          use: 'css-loader!sass-loader'
-        })
+        test: /\.scss?$/,
+        loader: 'style-loader!css-loader!sass-loader',
+        include: path.join(__dirname, 'src', 'styles')
       },
       { test: /\.png$/,
         loader: 'file-loader' },

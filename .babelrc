@@ -10,7 +10,6 @@
     "react"
   ],
   "plugins": [
-    "react-hot-loader/babel",
-    "react-html-attrs"
+    "react-hot-loader/babel"
   ]
 }

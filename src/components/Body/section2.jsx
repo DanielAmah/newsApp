@@ -17,7 +17,7 @@ export default class Section2 extends React.Component {
         <div className="row">
           <div className="col-md-12">
             <div>
-              <div class="NewsArticleSource">
+              <div className="NewsArticleSource">
                 <h3>
                   <span className="Capitalize">{SortBy}</span> News articles from {sourceName}
                 </h3>

@@ -1,28 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
-    
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="723432734756-bvm7lq0v6gtg5d88vrg2aluqjd7o0lme.apps.googleusercontent.com">
-
-      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div id="main"></div>
-
- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/en-gb.js'></script>
-
-<script src="https://apis.google.com/js/platform.js?onload=triggerGoogleLoaded" async defer></script>
-<script type="text/javascript">
-  function triggerGoogleLoaded() {
-    window.dispatchEvent(new Event('google-loaded'));
-  }
-</script>
-
-    <script type="text/javascript" src="/public/bundle.js"></script>
-  </body>
+    <title>News App</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="/public/bundle.js"></script></body>
 </html>

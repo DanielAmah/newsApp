@@ -6,7 +6,7 @@ import store from '../../store/articlesStore';
 import action from '../../Actions/actions';
 
 
-export default class Section1 extends React.Component {
+export default class  Section1 extends React.Component{
   constructor(props) {
     super(props);
     this.state = { source: 'TechCrunch', sort: 'top', info: '', showResults: false };
@@ -57,4 +57,5 @@ export default class Section1 extends React.Component {
     );
   }
 }
+
 
